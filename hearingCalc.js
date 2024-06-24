@@ -7,7 +7,7 @@ document.getElementById('hearingForm').addEventListener('submit', function(event
 
     // Perform calculation
     var hearingImpairment = 0;
-    if (frequency >= 500 && frequency <= 2000) {
+    if (frequency >= 250 && frequency <= 2000) {
         hearingImpairment = 1.5 * threshold - 75;
     } else if (frequency > 2000 && frequency <= 8000) {
         hearingImpairment = 0.75 * threshold - 7.5;
